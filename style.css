@@ -1,0 +1,83 @@
+/* core styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #e0e0e0;
+}
+
+/* calculator containre */
+.calc {
+  width: 330px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  box-shadow: 21px 21px 43px #9f9f9f, -21px -21px 43px #ffffff;
+}
+
+/* screen section  */
+.screen {
+  width: 100%;
+  text-align: right;
+  margin-top: 60px;
+}
+
+p {
+  font-size: 50px;
+  font-weight: 600;
+  padding-right: 35px;
+  color: #494848;
+}
+
+/* buttons section  */
+
+.buttons {
+  margin-top: 20px;
+  width: 100%;
+  height: 350px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.22, 1.61, 0.41, -0.33);
+}
+
+.btn {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 50px;
+  height: 50px;
+  border-radius: 125px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 21px 21px 43px #9f9f9f, -21px -21px 43px #ffffff;
+}
+
+.zero {
+  grid-column: 1 / span 2;
+  width: 120px;
+}
+
+.gray {
+  background: linear-gradient(338deg, #a7a6a7, #ccbebe);
+}
+
+.orange {
+  background: linear-gradient(68deg, #ebcf0a, #a7b63b);
+}
